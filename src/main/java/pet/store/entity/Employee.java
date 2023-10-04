@@ -1,4 +1,4 @@
-package pet_store_entity;
+package pet.store.entity;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
