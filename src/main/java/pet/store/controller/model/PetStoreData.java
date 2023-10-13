@@ -18,10 +18,10 @@ public class PetStoreData {
 	private String petStoreAddress;
 	private String petStoreCity;
 	private String petStoreState;
-	private int petStoreZip;
+	private String petStoreZip;
 	private String petStorePhone;
-	private Set<PetStoreCustomer> customers = new HashSet<>();
-	private Set<PetStoreEmployee> employees = new HashSet<>();
+	Set<PetStoreCustomer> customers = new HashSet<>();
+	Set<PetStoreEmployee> employees = new HashSet<>();
 	
 public PetStoreData(PetStore petStore) {
 	petStoreId = petStore.getPetStoreId();
@@ -45,7 +45,7 @@ public PetStoreData(PetStore petStore) {
 @Data
 @NoArgsConstructor
 public static class PetStoreCustomer {
-		private int customerId;
+		private Long customerId;
 		private String customerFirstName;
 		private String customerLastName;
 		private String customerEmail;
@@ -64,7 +64,7 @@ public PetStoreCustomer(Customer customer) {
 @Data
 @NoArgsConstructor
 public static class PetStoreEmployee {
-	private int employeeId;
+	private Long employeeId;
 	private String employeeFirstName;
 	private String employeeLastName;
 	private String employeePhone;
